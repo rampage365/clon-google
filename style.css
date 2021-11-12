@@ -1,0 +1,123 @@
+body {
+    font-family: "Roboto", "Helvetica Neue", "Arial",sans-serif;
+    font-size: 10pt;
+}
+nav.navbar{
+  width: 100%;
+  display: flex;
+}
+
+ul.burguer-menu{
+  list-style-type: none;
+  height: 32px;
+  width: 32px;
+  display: block;
+  margin: 8px;
+  padding: 0;
+}
+
+button{
+  border: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-size: 12px;
+}
+
+button.btn-navbar:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button.btn-navbar.active{
+  color: #4285f4;
+  border-bottom: 2px solid #4285f4;
+}
+
+button.btn-apps{
+  margin-left: auto;
+}
+
+
+/* Search section */
+
+main.search-section{
+  width: 100%;
+  margin-top: 4em;
+}
+
+.logo{
+  margin: auto;
+  display: flex;
+}
+
+.logo img.img-google{
+  width: auto;
+  height: 82px;
+  margin: auto;
+}
+
+.search-bar{
+  display: flex;
+  align-content: center;
+}
+
+.search-bar input{
+  margin: auto;
+  border-radius: 20px;
+  border: 1px solid #b7b7b7;
+  width: 95%;
+  height: 38px;
+}
+
+.desktop-btns{
+  text-align: center;
+  margin: 16px auto;
+  display: none;
+}
+
+.desktop-btns button.btn{
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-family: arial,sans-serif;
+  text-transform: none;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+}
+
+.lang p{
+  text-align: center;
+}
+
+
+@media screen and (min-width: 480px){
+ 
+  .logo img.img-google{
+    height: 120px;
+  }
+
+  .search-bar input{
+    width: 300px;
+  }
+
+  .desktop-btns{
+    display: block;
+  }
+
+}
+
+@media screen and (min-width: 768px){
+  .logo img.img-google{
+    height: 170px;
+  }
+}
+
+footer.footer-section{
+  display: none;
+}
